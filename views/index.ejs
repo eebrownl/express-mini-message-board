@@ -10,10 +10,11 @@
     <p>Here are your messages: </p>
     <br />
     <% messages.forEach(msg =>
-    {%><p> <%= msg.text %></p>
+    {%><p><strong> <%= msg.text %> </strong></p>
     <p> from: <%= msg.user %></p>
     <p> <%= msg.added %></p>
     <br />
     <%}) %>
+    <a href="/new">Create new message</a>
   </body>
 </html>
