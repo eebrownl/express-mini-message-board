@@ -8,5 +8,18 @@
 </head>
 <body>
     <h1>Create New Message</h1>
+    <form action="/new" method="post">
+        <div>
+            <label for="user">Name:</label>
+            <input type="text" name="user" id="user" required>
+        </div>
+        <br>
+        <div>
+            <label for="message">Message:</label>
+            <textarea name="message" id="message" required></textarea>
+        </div>
+        <br>
+        <button type="submit">Submit</button>
+    </form>
 </body>
 </html>
