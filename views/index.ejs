@@ -7,5 +7,13 @@
   <body>
     <h1><%= title %></h1>
     <p>Welcome to <%= title %></p>
+    <p>Here are your messages: </p>
+    <br />
+    <% messages.forEach(msg =>
+    {%><p> <%= msg.text %></p>
+    <p> from: <%= msg.user %></p>
+    <p> <%= msg.added %></p>
+    <br />
+    <%}) %>
   </body>
 </html>
